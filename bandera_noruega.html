@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de Noruega</title>
+</head>
+<body>
+    <canvas id="banderaNoruega" width="900" height="700"></canvas>
+    <script>
+        const canvas = document.getElementById('banderaNoruega');
+        const ctx = canvas.getContext('2d');
+
+        
+        const rojo = '#BA0C2F';
+        const blanco = '#FFFFFF';
+        const azul = '#00205B';
+
+                function dibujarRectangulo(color, x, y, ancho, alto) {
+            ctx.fillStyle = color;
+            ctx.fillRect(x, y, ancho, alto);
+        }
+
+        dibujarRectangulo(rojo, 0, 0, 900, 700);
+
+        
+        dibujarRectangulo(blanco, 0, 300, 900, 100);
+
+        
+        dibujarRectangulo(blanco, 300, 0, 100, 700);
+
+        
+        dibujarRectangulo(azul, 0, 330, 900, 40);
+
+
+        dibujarRectangulo(azul, 330, 0, 40, 700);
+    </script>
+</body>
+</html>
